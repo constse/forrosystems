@@ -37,7 +37,9 @@
             <div class="timer">
                 <h2 class="text-center"><?php echo $offer_h2; ?></h2>
                 <div class="widget"></div>
-                <button type="button">Заказать</button>
+                <div class="text-center">
+                    <button type="button">Заказать</button>
+                </div>
             </div>
         </section>
         <section class="center-block section-2">
@@ -164,6 +166,26 @@
         </section>
         <section class="center-block section-8">
             <h2 class="text-center">Как мы работаем</h2>
+            <ul class="list-inline text-center">
+                <li>
+                    <div class="stage mail"></div>
+                </li>
+                <li>
+                    <div class="stage calc"></div>
+                </li>
+                <li>
+                    <div class="stage agreement"></div>
+                </li>
+                <li>
+                    <div class="stage delivery"></div>
+                </li>
+                <li>
+                    <div class="stage mounting"></div>
+                </li>
+            </ul>
+            <div class="text-center">
+                <button type="button">Хочу конвектор!</button>
+            </div>
         </section>
         <section class="center-block section-9">
             <h2 class="text-center">Отзывы</h2>
@@ -194,7 +216,9 @@
                         </p>
                     </li>
                 </ul>
-                <button type="button">Заказать</button>
+                <div class="text-center">
+                    <button type="button">Заказать</button>
+                </div>
             </table>
             <div id="map"></div>
         </section>
