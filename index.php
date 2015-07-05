@@ -168,13 +168,33 @@
         <section class="center-block section-9">
             <h2 class="text-center">Отзывы</h2>
             <table>
-                <tbody>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                </tbody>
+                <ul class="list-inline text-center">
+                    <li>
+                        <img src="<?php echo $review1_photo; ?>">
+                        <p>
+                            <span>&laquo;</span>
+                            <?php echo $review1_text; ?>
+                            <span>&raquo;</span>
+                        </p>
+                    </li>
+                    <li>
+                        <img src="<?php echo $review2_photo; ?>">
+                        <p>
+                            <span>&laquo;</span>
+                            <?php echo $review2_text; ?>
+                            <span>&raquo;</span>
+                        </p>
+                    </li>
+                    <li>
+                        <img src="<?php echo $review3_photo; ?>">
+                        <p>
+                            <span>&laquo;</span>
+                            <?php echo $review3_text; ?>
+                            <span>&raquo;</span>
+                        </p>
+                    </li>
+                </ul>
+                <button type="button">Заказать</button>
             </table>
             <div id="map"></div>
         </section>
@@ -196,21 +216,28 @@
             </p>
         </section>
         <section class="center-block section-11">
-            <footer></footer>
+            <footer>
+                <div class="address">
+                    <h3>Наш адрес</h3>
+                    г. Владимир, ул. Мещерская, д. 6<br>
+                    &copy; 2015 Forro Systems
+                </div>
+                <div class="phones">
+                    <h3>Наши телефоны</h3>
+                    <span></span> +7 (915) 790-06-71<br>
+                    <span></span> +7 (4922) 52-22-79
+                </div>
+                <div class="social">
+                    <h3>Мы в соцсетях</h3>
+                    <a href="#" class="facebook"></a>
+                    <a href="#" class="vkontakte"></a>
+                    <a href="#" class="instagram"></a>
+                </div>
+            </footer>
         </section>
         <script src="/js/jquery-1.11.3.min.js"></script>
         <script src="/js/bootstrap.min.js"></script>
         <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
-        <script>
-            var map;
-
-            function mapInit() {
-                map = new ymaps.Map("map", {center: [55.76, 37.64], zoom: 7});
-            }
-
-            $(document).ready(function() {
-                ymaps.ready(mapInit);
-            });
-        </script>
+        <script src="/js/script.js"></script>
     </body>
 </html>
